@@ -1,0 +1,17 @@
+Source: subutai-proxy
+Section: unknown
+Priority: optional
+Maintainer: Lars Boegild Thomsen <lbthomsen@optimal-dynamics.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://subutai.io
+#Vcs-Git: https://anonscm.debian.org/collab-maint/subutai-proxy.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/subutai-proxy.git
+
+Package: subutai-proxy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, nginx
+Description: Subutai Proxy Service
+ The Subutai Proxy Service uses nginx to proxy http, https, tcp and udp between
+ containers and the Internet
+ 
